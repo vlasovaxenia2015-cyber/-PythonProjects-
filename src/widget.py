@@ -5,7 +5,7 @@ def mask_account_card(account_card: str) -> str:
     """  Обрабатывает информацию о картах и счетах, и выводит маскировку. """
     if "счет" in account_card.lower():
         number_card = account_card[-10:]
-        masked_card = mask_account_card(number_card)
+        masked_card = get_mask_account(number_card)
         return f"Счет {masked_card}"
     else:
         name_card = account_card[-16:]
