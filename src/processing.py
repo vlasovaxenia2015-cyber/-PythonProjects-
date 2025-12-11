@@ -11,3 +11,4 @@ def sort_by_date(transactions: list, reverse: bool = False) -> list:
     """Функция для сортировки списка транзакций по дате"""
     new_transactions = sorted(transactions, key=lambda x: x.get("date"), reverse=reverse)
     return new_transactions
+
